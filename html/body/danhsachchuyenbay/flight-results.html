@@ -1,0 +1,198 @@
+<link rel="stylesheet" href="css/body/danhsachchuyenbay/flight-results.css">
+
+<!-- Tái sử dụng form tìm kiếm -->
+<section class="search-flight search-flight-compact">
+    <form class="search-flight-form">
+        <div class="input-group">
+            <span class="icon">🛫</span>
+            <input type="text" placeholder="Tới từ ?" value="SGN">
+        </div>
+        <div class="input-group">
+            <span class="icon">🛬</span>
+            <input type="text" placeholder="Điểm đến ?" value="HUI">
+        </div>
+        <div class="input-group">
+            <span class="icon">📅</span>
+            <input type="text" placeholder="Ngày đi - Ngày về" value="28/02/2025 - 21/03/2025">
+        </div>
+        <div class="input-group">
+            <span class="icon">👤</span>
+            <input type="text" placeholder="1 người lớn" value="1 Người lớn">
+        </div>
+        <button type="submit" class="btn-search">Tìm kiếm</button>
+    </form>
+</section>
+
+<!-- Filter options -->
+<section class="flight-filters">
+    <div class="filter-container">
+        <button class="filter-btn">Mức giá <span class="arrow-down">▼</span></button>
+        <button class="filter-btn">Thời gian <span class="arrow-down">▼</span></button>
+        <button class="filter-btn">Hãng hàng không <span class="arrow-down">▼</span></button>
+        <button class="filter-btn">Hạng ghế <span class="arrow-down">▼</span></button>
+        <button class="filter-btn">Chi tiết <span class="arrow-down">▼</span></button>
+    </div>
+</section>
+
+<!-- Chọn chuyến bay -->
+<section class="flight-selection">
+    <h3 class="selection-title">Lựa chọn chuyến bay khứ hồi</h3>
+    
+    <div class="flight-results-container">
+        <!-- Danh sách chuyến bay -->
+        <div class="flight-list">
+            <!-- Chuyến bay 1 -->
+            <div class="flight-item" data-flight-id="vn1">
+                <div class="flight-airline">
+                    <img src="assets/logo/vietnam-airlines.png" alt="Vietnam Airlines" class="airline-logo">
+                    <div class="airline-info">
+                        <span class="airline-name">Vietnam Airlines</span>
+                        <span class="flight-number">VN730</span>
+                    </div>
+                </div>
+                
+                <div class="flight-time">
+                    <div class="time-details">
+                        <div class="departure-time">8:30AM</div>
+                        <div class="arrival-time">9:45AM</div>
+                    </div>
+                    <div class="duration">1h 15m</div>
+                </div>
+                
+                <div class="flight-price">
+                    <div class="price-amount">1,600,000 VND</div>
+                    <div class="price-type">Phổ thông</div>
+                </div>
+            </div>
+            
+            <!-- Chuyến bay 2 -->
+            <div class="flight-item" data-flight-id="ba1">
+                <div class="flight-airline">
+                    <img src="assets/logo/bamboo.png" alt="Bamboo Airways" class="airline-logo">
+                    <div class="airline-info">
+                        <span class="airline-name">Bamboo Airways</span>
+                        <span class="flight-number">QH730</span>
+                    </div>
+                </div>
+                
+                <div class="flight-time">
+                    <div class="time-details">
+                        <div class="departure-time">7:35 AM</div>
+                        <div class="arrival-time">8:50 AM</div>
+                    </div>
+                    <div class="duration">1h 15m</div>
+                </div>
+                
+                <div class="flight-price">
+                    <div class="price-amount">1,550,000 VND</div>
+                    <div class="price-type">Phổ thông</div>
+                </div>
+            </div>
+            
+            <!-- Chuyến bay 3 -->
+            <div class="flight-item" data-flight-id="vn2">
+                <div class="flight-airline">
+                    <img src="assets/logo/vietnam-airlines.png" alt="Vietnam Airlines" class="airline-logo">
+                    <div class="airline-info">
+                        <span class="airline-name">Vietnam Airlines</span>
+                        <span class="flight-number">VN731</span>
+                    </div>
+                </div>
+                
+                <div class="flight-time">
+                    <div class="time-details">
+                        <div class="departure-time">10:00 AM</div>
+                        <div class="arrival-time">11:15 AM</div>
+                    </div>
+                    <div class="duration">1h 15m</div>
+                </div>
+                
+                <div class="flight-price">
+                    <div class="price-amount">1,500,000 VND</div>
+                    <div class="price-type">Phổ thông</div>
+                </div>
+            </div>
+            
+            <!-- Chuyến bay 4 -->
+            <div class="flight-item" data-flight-id="vj1">
+                <div class="flight-airline">
+                    <img src="assets/logo/vietjet.png" alt="VietJet Air" class="airline-logo">
+                    <div class="airline-info">
+                        <span class="airline-name">VietJet Air</span>
+                        <span class="flight-number">VJ123</span>
+                    </div>
+                </div>
+                
+                <div class="flight-time">
+                    <div class="time-details">
+                        <div class="departure-time">12:15 AM</div>
+                        <div class="arrival-time">13:30 PM</div>
+                    </div>
+                    <div class="duration">1h 15m</div>
+                </div>
+                
+                <div class="flight-price">
+                    <div class="price-amount">1,200,000 VND</div>
+                    <div class="price-type">Phổ thông</div>
+                </div>
+            </div>
+            
+            <!-- Chuyến bay 5 -->
+            <div class="flight-item selected" data-flight-id="vj2">
+                <div class="flight-airline">
+                    <img src="assets/logo/vietjet.png" alt="VietJet Air" class="airline-logo">
+                    <div class="airline-info">
+                        <span class="airline-name">VietJet Air</span>
+                        <span class="flight-number">VJ456</span>
+                    </div>
+                </div>
+                
+                <div class="flight-time">
+                    <div class="time-details">
+                        <div class="departure-time">5:00 PM</div>
+                        <div class="arrival-time">6:15 PM</div>
+                    </div>
+                    <div class="duration">1h 15m</div>
+                </div>
+                
+                <div class="flight-price">
+                    <div class="price-amount">1,300,000 VND</div>
+                    <div class="price-type">Phổ thông</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Thông tin tổng hợp -->
+        <div class="flight-summary">
+            <div class="summary-header">
+                <img src="assets/logo/vietjet.png" alt="VietJet Air" class="airline-logo-sm">
+                <div class="summary-airline">
+                    <div class="airline-name">VietJet Air</div>
+                    <div class="flight-number">VJ456</div>
+                </div>
+            </div>
+            
+            <div class="summary-time">
+                <div class="time-display">5:30 AM - 9:45 PM</div>
+                <div class="duration-display">1h 15m</div>
+            </div>
+            
+            <div class="summary-price-details">
+                <div class="price-row">
+                    <span class="price-label">Subtotal</span>
+                    <span class="price-value">1,300,000 VND</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Taxes and Fees</span>
+                    <span class="price-value">300,000 VND</span>
+                </div>
+                <div class="price-row total">
+                    <span class="price-label">Total</span>
+                    <span class="price-value">1,600,000 VND</span>
+                </div>
+            </div>
+            
+            <button class="btn-details">Xem thông tin</button>
+        </div>
+    </div>
+</section>
